@@ -1,5 +1,13 @@
 PyNaCl SealedBox encrypt/decrypt demo
 ==================================================
+* NaCl  http://nacl.cr.yp.to/index.html
+* PyNaCl https://pypi.org/project/PyNaCl/
+* PyNaCl Github https://github.com/pyca/pynacl
+* PyNaCl readthedocs https://pynacl.readthedocs.io/en/stable/
+
+
+Demo installation
+==================================================
 * Create environment and install packages.
 
 .. code::
@@ -10,6 +18,9 @@ PyNaCl SealedBox encrypt/decrypt demo
     $ pip install setuptools --upgrade && pip install pip --upgrade
     $ pip install -r requirements.txt
 
+
+SealedBox encrypt/decrypt sample
+==================================================
 * Run sample code.
 
 .. code::
