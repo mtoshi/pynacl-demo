@@ -37,6 +37,24 @@ PyNaCl SealedBox encrypt/decrypt demo
 
 * Sample code.
 
-.. literalinclude:: sealedbox_sample.py
-   :language: python
+.. code:: python
+
+    from nacl.public import PrivateKey
+    from nacl.public import SealedBox
+    from nacl.encoding import Base64Encoder
+
+
+    prikey = PrivateKey.generate()
+    pubkey = prikey.public_key
+
+    message = 'abcdefg1234'
+    encoding = 'utf-8'
+
+    box = SealedBox(pubkey)
+    encrypted = box.encrypt(message.encode(encoding=encoding))
+    print(encrypted)
+
+    box = SealedBox(prikey)
+    decrypted = box.decrypt(encrypted).decode(encoding=encoding)
+    print(decrypted)
 
