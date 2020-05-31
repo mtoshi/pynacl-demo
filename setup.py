@@ -11,7 +11,7 @@ with open('requirements.txt', 'w') as _file:
 
 setup(
     name='pynacl-demo',
-    version='0.0.3',
+    version='0.0.4',
     url='https://github.com/mtoshi/pynacl-demo',
     author='mtoshi',
     author_email='mtoshi@outlook.com',
