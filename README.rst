@@ -13,7 +13,7 @@ Demo installation
 .. code::
 
     $ python3.7 -m venv /tmp/pynacl-demo && source /tmp/pynacl-demo/bin/activate
-    $ git clone git@gitlab.com:mtoshi/pynacl-demo.git
+    $ git clone git@github.com:mtoshi/pynacl-demo.git
     $ cd pynacl-demo
     $ pip install setuptools --upgrade && pip install pip --upgrade
     $ pip install -r requirements.txt
